@@ -1,0 +1,8 @@
+portfolio site layout - 
+sticky auto-collapsing header with breadcrumbs
+hero-image/loudspeaker whatever it is called
+profile - picture and text
+portfolioCards - highlights on hover, opens modal on click
+contact
+(all one page, linked in header)
+sticky auto-collapsing footer with breadcrumbs
