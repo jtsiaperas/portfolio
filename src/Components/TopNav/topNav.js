@@ -1,17 +1,23 @@
-import React, { Component } from 'react';
-import "./ProjectCard.css";
+import React from 'react';
+import "./TopNav.css";
 
-const ProjectCard = props =>{
-  
-  <div className="card">
-    <div className = "card-header">
-      {props.name}
-    </div>
-    <img className = "card-img-top" alt={props.name} src={props.image} />
-    <div className="card-body">
-      {props.summary}
-    </div>
-  </div>
-}
+const TopNav = () =>{
+ return ( <div id = "topNav" className = "fixed-top">
+  	<nav className="navbar navbar-expand-lg navbar-light bg-light">
+  	<a className="navbar-brand" href="#">Navbar</a>
+   	<button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+    	<span className="navbar-toggler-icon"></span>
+  	</button>
+  			<div className="collapse navbar-collapse" id="navbarNavAltMarkup">
+    			<div className="navbar-nav">
+      				<a className="nav-item nav-link active" href="#">Home <span className="sr-only">(current)</span></a>
+      				<a className="nav-item nav-link" href="#">Profile</a>
+      				<a className="nav-item nav-link" href="#">Portfolio</a>
+      				<a className="nav-item nav-link" href="#">Contact</a>
+      			</div>
+  			</div>
+		</nav>
+	</div>);
+};
 
-export default ProjectCard;
+export default TopNav;

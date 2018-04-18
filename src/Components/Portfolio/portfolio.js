@@ -1,17 +1,17 @@
 import React, { Component } from 'react';
-import "./ProjectCard.css";
+import ProjectCard from "../ProjectCard";
+import projects from "./projects.js";
+import "./Portfolio.css";
 
-const ProjectCard = props =>{
-  
-  <div className="card">
-    <div className = "card-header">
-      {props.name}
-    </div>
-    <img className = "card-img-top" alt={props.name} src={props.image} />
-    <div className="card-body">
-      {props.summary}
-    </div>
-  </div>
+class Portfolio extends Component {
+	state = {
+		projects: projects
+	}
+	render(){
+	return(
+	<ProjectCard projects={this.state.projects} />
+	);
 }
+};
 
-export default ProjectCard;
+export default Portfolio;

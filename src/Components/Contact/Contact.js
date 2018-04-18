@@ -1,17 +1,12 @@
 import React, { Component } from 'react';
-import "./ProjectCard.css";
+import "./Contact.css";
 
-const ProjectCard = props =>{
-  
-  <div className="card">
-    <div className = "card-header">
-      {props.name}
-    </div>
-    <img className = "card-img-top" alt={props.name} src={props.image} />
-    <div className="card-body">
-      {props.summary}
-    </div>
+const Contact = () =>{
+  return(
+  <div id = "contact">
+  	Contact form Goes Here
   </div>
-}
+  );
+};
 
-export default ProjectCard;
+export default Contact;

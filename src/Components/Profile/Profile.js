@@ -1,17 +1,12 @@
-import React, { Component } from 'react';
-import "./ProjectCard.css";
+import React from 'react';
+import "./Profile.css";
 
-const ProjectCard = props =>{
-  
-  <div className="card">
-    <div className = "card-header">
-      {props.name}
-    </div>
-    <img className = "card-img-top" alt={props.name} src={props.image} />
-    <div className="card-body">
-      {props.summary}
-    </div>
+const Profile = () =>{
+  return(
+  <div id="profile">
+    Profile goes here!
   </div>
+ );
 }
 
-export default ProjectCard;
+export default Profile;

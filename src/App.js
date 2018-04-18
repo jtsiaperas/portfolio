@@ -1,24 +1,32 @@
-import React, { Component } from 'react';
-import { BrowserRouter as Router, Route } from "react-router-dom";
-import portfolio from "./components/Portfolio";
-import profile from "./components/Profile";
-import hero from "./components/Hero";
-import contact from "./components/Contact";
-import topNav from "./components/TopNav";
-import botNav from "./components/BotNav";
-import './App.css';
+import React from 'react';
+import Portfolio from "./Components/Portfolio";
+import Profile from "./Components/Profile";
+import Hero from "./Components/Hero";
+import Contact from "./Components/Contact";
+import TopNav from "./Components/TopNav";
+import BotNav from "./Components/BotNav";
+
     
 const App = () => (
     
       <div>
-          <topNav />
-          <hero />
-          <profile />
-          <portfolio />
-          <contact />
-          <botNav />
+      <TopNav />
+      <Hero />
+      
+      <div className = "container">
+      	<div className = "row">   
+          <Profile />
+        </div>
+        <div className = "row">
+          <Portfolio />
+        </div>
+        <div className = "row">
+          <Contact />
+         </div>
       </div>
     
+      <BotNav />
+      </div>
   );
 
 export default App;
